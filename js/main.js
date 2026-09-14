@@ -63,7 +63,7 @@ $(function () {
 
             // 모바일 → SC4보다 200px 먼저 파란색
             const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
-            changePoint = sc4Top - 200;
+            changePoint = sc4Top - 550;
 
         } else {
 
