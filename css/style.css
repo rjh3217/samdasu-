@@ -657,7 +657,7 @@ header.on {
 }
 
 .sc2 .inner {
-    padding: 160px 20px;
+    padding: 160px 0;
     transform: translateY(-100px);
 }
 

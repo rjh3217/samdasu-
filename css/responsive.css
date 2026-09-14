@@ -1,10 +1,7 @@
 @charset "utf-8";
 
 
-/* ==================================================
-   MOBILE
-   768px 이하
-================================================== */
+
 
 @media screen and (max-width: 968px) {
 
@@ -114,9 +111,7 @@
     }
 
 
-    /* ==================================================
-       SC2
-    ================================================== */
+    /*SC2*/
 
     .sc2 {
         width: 100%;
@@ -456,7 +451,7 @@
         width: 38px;
         max-width: 38px;
     }
-    
+
 
     .gotop_wrap .warterr {
         width: 25px;
@@ -467,7 +462,8 @@
         height: auto;
     }
 
-    .gotop_wrap .ellips_w, .gotop_wrap .ellips_b {
+    .gotop_wrap .ellips_w,
+    .gotop_wrap .ellips_b {
         width: 30px;
     }
 
