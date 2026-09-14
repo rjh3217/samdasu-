@@ -208,6 +208,8 @@ $(function () {
     $('.mobile_menu_btn').on('click', function () {
 
         $('.mobile_menu').addClass('active');
+        $(this).addClass('active');
+        $('.gotop_wrap').hide();
 
     });
 
@@ -217,6 +219,8 @@ $(function () {
     $('.mobile_close').on('click', function () {
 
         $('.mobile_menu').removeClass('active');
+        $('.mobile_menu_btn').removeClass('active');
+        $('.gotop_wrap').show();
 
     });
 
@@ -226,6 +230,8 @@ $(function () {
     $('.mobile_menu nav a').on('click', function () {
 
         $('.mobile_menu').removeClass('active');
+        $('.mobile_menu_btn').removeClass('active');
+        $('.gotop_wrap').show();
 
     });
 

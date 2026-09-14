@@ -79,6 +79,10 @@ header {
     cursor: pointer;
 }
 
+.mobile_menu_btn.active {
+    display: none;
+}
+
 .mobile_menu_btn span {
     display: block;
 
