@@ -33,7 +33,7 @@
     }
 
     .mobile_header.on .mobile_menu_btn span {
-        background-color: var(--main_color);
+        background-color: var(--main_color) !important;
     }
 
     .mobile_header {
@@ -460,6 +460,7 @@
         width: 38px;
         max-width: 38px;
     }
+    
 
     .gotop_wrap .warterr {
         width: 25px;
@@ -468,6 +469,10 @@
     .gotop_wrap .warterr img {
         width: 100%;
         height: auto;
+    }
+
+    .gotop_wrap .ellips_w, .gotop_wrap .ellips_b {
+        width: 30px;
     }
 
 }
