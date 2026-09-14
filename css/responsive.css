@@ -36,8 +36,9 @@
         display: block !important;
     }
 
-
-
+    .respon {
+        display: block !important;
+    }
 
     /* ==================================================
        SC1
@@ -136,7 +137,7 @@
 
     /* SC2 제목 */
 
-    .sc2 > .inner > .title_wrap {
+    .sc2>.inner>.title_wrap {
         width: 100%;
 
         display: flex;
@@ -148,13 +149,13 @@
         text-align: center;
     }
 
-    .sc2 > .inner > .title_wrap .water img {
+    .sc2>.inner>.title_wrap .water img {
         width: 16px;
 
-        margin-bottom: 45px;
+        margin-bottom: 0;
     }
 
-    .sc2 > .inner > .title_wrap .title h3 {
+    .sc2>.inner>.title_wrap .title h3 {
         font-size: var(--section_title);
         line-height: 1.25;
     }
@@ -259,7 +260,7 @@
 
     /* SC4 제목 */
 
-    .sc4 > .inner > .container > .title_wrap {
+    .sc4>.inner>.container>.title_wrap {
         width: 100%;
 
         display: flex;
@@ -271,7 +272,7 @@
         text-align: center;
     }
 
-    .sc4 > .inner > .container > .title_wrap .title {
+    .sc4>.inner>.container>.title_wrap .title {
         width: 100%;
 
         margin-bottom: 25px;
@@ -279,11 +280,11 @@
         white-space: normal;
     }
 
-    .sc4 > .inner > .container > .title_wrap .title .black {
+    .sc4>.inner>.container>.title_wrap .title .black {
         font-size: var(--section_title);
     }
 
-    .sc4 > .inner > .container > .title_wrap .title .blue {
+    .sc4>.inner>.container>.title_wrap .title .blue {
         font-size: var(--intro_title);
     }
 
@@ -436,9 +437,7 @@
         margin-top: 35px;
     }
 
-    .sc5 .respon {
-        display: block !important;
-    }
+
 
 
     /* ==================================================
