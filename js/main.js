@@ -16,12 +16,15 @@ $(function () {
 
         let changePoint;
 
-        if ($(window).width() <= 768) {
+        if ($(window).width() <= 968) {
 
-            changePoint = sc4.offsetTop;
+            // 모바일 → SC4 진입하면 헤더 변경
+            const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
+            changePoint = sc4Top;
 
         } else {
 
+            // PC → SC3 진입하면 헤더 변경
             changePoint = sc3.offsetTop;
 
         }
@@ -38,12 +41,10 @@ $(function () {
 
         }
 
+        console.log('HEADER', scrollTop, changePoint, scrollTop >= changePoint);
+
     });
 
-
-    // ================================
-    // GOTOP
-    // ================================
 
     // ================================
     // GOTOP
@@ -58,10 +59,11 @@ $(function () {
 
         let changePoint;
 
-        if ($(window).width() <= 768) {
+        if ($(window).width() <= 968) {
 
-            // 모바일 → 헤더보다 600px 먼저 파란색
-            changePoint = sc4.offsetTop - 600;
+            // 모바일 → SC4보다 200px 먼저 파란색
+            const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
+            changePoint = sc4Top - 200;
 
         } else {
 
@@ -80,6 +82,8 @@ $(function () {
             $goTop.removeClass('on');
 
         }
+
+        console.log('GOTOP', scrollTop, changePoint, scrollTop >= changePoint);
 
     });
 
@@ -267,6 +271,12 @@ $(function () {
         $('.gotop_wrap').show();
 
     });
+
+    console.log('화면 높이:', window.innerHeight);
+    console.log('화면 너비:', $(window).width());
+    console.log('스크롤 위치:', window.scrollY);
+    console.log('SC4 문서 위치:', sc4.getBoundingClientRect().top + window.scrollY);
+    console.log('SC4 화면 위치:', sc4.getBoundingClientRect().top);
 
 
 });
