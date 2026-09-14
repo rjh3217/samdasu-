@@ -60,7 +60,7 @@ $(function () {
 
         if ($(window).width() <= 768) {
 
-            // 모바일 → 헤더보다 300px 먼저 파란색
+            // 모바일 → 헤더보다 600px 먼저 파란색
             changePoint = sc4.offsetTop - 600;
 
         } else {
