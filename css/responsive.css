@@ -6,7 +6,7 @@
    768px 이하
 ================================================== */
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 968px) {
 
     /* ==================================================
        MOBILE FONT VARIABLES
@@ -204,13 +204,9 @@
     }
 
     .sc2 .swiper-pagination {
-        bottom: 8px;
+        display: none;
     }
 
-    .sc2 .swiper-pagination-bullet {
-        width: 6px;
-        height: 6px;
-    }
 
 
     /* ==================================================

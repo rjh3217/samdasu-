@@ -155,6 +155,7 @@
                 slidesPerView: 3,
                 spaceBetween: 30,
                 loop: true,
+
                 autoplay: {
                     delay: 1500,
                     disableOnInteraction: false,
@@ -164,6 +165,17 @@
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    1000: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    }
+                }
             });
         </script>
         <div class="sc3">
