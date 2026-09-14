@@ -61,7 +61,7 @@ $(function () {
 
         if ($(window).width() <= 968) {
 
-            // 모바일 → SC4보다 200px 먼저 파란색
+            // 모바일 → SC4보다 550px 먼저 파란색
             const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
             changePoint = sc4Top - 550;
 
