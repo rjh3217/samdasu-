@@ -32,6 +32,10 @@
         display: none !important;
     }
 
+    .mobile_header.on .mobile_menu_btn span {
+        background-color: var(--main_color);
+    }
+
     .mobile_header {
         display: block !important;
     }

@@ -6,20 +6,35 @@ $(function () {
     // ================================
 
     const $header = $('header');
+    const $mobileHeader = $('.mobile_header');
     const sc3 = $('.sc3')[0];
+    const sc4 = $('.sc4')[0];
 
     $(window).on('scroll', function () {
 
         const scrollTop = $(window).scrollTop();
-        const sc3Top = sc3.offsetTop;
 
-        if (scrollTop >= sc3Top) {
+        let changePoint;
+
+        if ($(window).width() <= 768) {
+
+            changePoint = sc4.offsetTop;
+
+        } else {
+
+            changePoint = sc3.offsetTop;
+
+        }
+
+        if (scrollTop >= changePoint) {
 
             $header.addClass('on');
+            $mobileHeader.addClass('on');
 
         } else {
 
             $header.removeClass('on');
+            $mobileHeader.removeClass('on');
 
         }
 
