@@ -21,6 +21,10 @@
         display: block !important;
     }
 
+    .inner {
+        padding: 0 120px;
+    }
+
 
     /* ==================================================
        SC1
@@ -119,7 +123,7 @@
 
     /* SC2 제목 */
 
-    .sc2 > .inner > .title_wrap {
+    .sc2>.inner>.title_wrap {
         width: 100%;
 
         display: flex;
@@ -131,13 +135,13 @@
         text-align: center;
     }
 
-    .sc2 > .inner > .title_wrap .water img {
+    .sc2>.inner>.title_wrap .water img {
         width: 16px;
 
         margin-bottom: 45px;
     }
 
-    .sc2 > .inner > .title_wrap .title h3 {
+    .sc2>.inner>.title_wrap .title h3 {
         font-size: 27px;
         line-height: 1.25;
     }
@@ -245,7 +249,7 @@
 
     /* SC4 제목 */
 
-    .sc4 > .inner > .container > .title_wrap {
+    .sc4>.inner>.container>.title_wrap {
         width: 100%;
 
         display: flex;
@@ -258,7 +262,7 @@
     }
 
 
-    .sc4 > .inner > .container > .title_wrap .title {
+    .sc4>.inner>.container>.title_wrap .title {
         width: 100%;
 
         margin-bottom: 25px;
@@ -267,12 +271,12 @@
     }
 
 
-    .sc4 > .inner > .container > .title_wrap .title .black {
+    .sc4>.inner>.container>.title_wrap .title .black {
         font-size: 28px;
     }
 
 
-    .sc4 > .inner > .container > .title_wrap .title .blue {
+    .sc4>.inner>.container>.title_wrap .title .blue {
         font-size: 30px;
     }
 
@@ -313,12 +317,11 @@
     }
 
 
-    .sc4 .b0img {
-        position: absolute;
+    .sc4>.inner>.container .b0img {
 
         left: 0;
         right: auto;
-        bottom: 0;
+        bottom: -35px;
 
         width: 100%;
     }
@@ -400,7 +403,7 @@
 
 
     .sc5 .inner .container .flex_box_wrap .flex_box {
-        width: 350px;
+        width: 240px;
 
         text-align: center;
     }

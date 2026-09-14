@@ -64,7 +64,7 @@ header {
 .mobile_menu_btn {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
 
     width: 42px;
     height: 35px;
