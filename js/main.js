@@ -45,15 +45,33 @@ $(function () {
     // GOTOP
     // ================================
 
+    // ================================
+    // GOTOP
+    // ================================
+
     const $goTop = $('.gotop_wrap');
     const $sc3 = $('.sc3');
 
     $(window).on('scroll', function () {
 
         const scrollTop = $(window).scrollTop();
-        const sc3Top = $sc3[0].offsetTop;
 
-        if (scrollTop >= sc3Top - 800) {
+        let changePoint;
+
+        if ($(window).width() <= 768) {
+
+            // 모바일 → 헤더보다 300px 먼저 파란색
+            changePoint = sc4.offsetTop - 600;
+
+        } else {
+
+            // PC → 기존 그대로
+            const sc3Top = $sc3[0].offsetTop;
+            changePoint = sc3Top - 800;
+
+        }
+
+        if (scrollTop >= changePoint) {
 
             $goTop.addClass('on');
 
