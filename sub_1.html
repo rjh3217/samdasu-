@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼다수 캠페인</title>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="js/sub_1.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="gotop_wrap">
+        <a href="#" class="ellips_w">
+            <img src="images/Ellipse 33.png" alt="물방울">
+        </a>
+        <a href="#" class="ellips_b">
+            <img src="images/elip.png" alt="물방울">
+        </a>
+        <a href="#" class="warterr">
+            <img src="images/gopage.png" alt="물병이미지">
+        </a>
+    </div>
+    <header>
+        <div class="inner">
+            <nav>
+                <ul class="hd_menu">
+                    <li><a href="#">STORY</a></li>
+                    <li>
+                        <div class="hd_logo">
+                            <a href="#" class="logo_white">
+                                <img src="images/logo_white.png" alt="흰색 로고">
+                            </a>
+                            <a href="#" class="logo_blue">
+                                <img src="images/logo_blue.png" alt="파란 로고">
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#">EVENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 모바일 헤더 -->
+    <div class="mobile_header">
+
+        <!-- 햄버거 버튼 -->
+        <button type="button" class="mobile_menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- 모바일 메뉴 -->
+        <div class="mobile_menu">
+
+            <div class="mobile_menu_top">
+
+                <a href="#" class="mobile_logo">
+                    <img src="images/logo_blue.png" alt="삼다수">
+                </a>
+
+                <button type="button" class="mobile_close">
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="#">EVENT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <main>
+        <div class="sc1">
+            <div class="inner">
+                <div class="cont_wrap">
+                    <div class="title_wrap">
+                        <div class="title">
+                            <h1 class="t_txt">지구는 지금</h1>
+                            <p class="t1">우리의 <span>선택</span>을 기다립니다</p>
+                        </div>
+                        <div class="sub_t">
+                            <p>버려진 쓰레기로 오염된 환경, 이제는 우리가 바꿔야 할 때입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn">
+                            <a href="#">
+                                <p class="txt">
+                                    참여하기
+                                </p>
+                                <div class="arrow">
+                                    <img src="images/arrow.png" alt="화살표">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc2_area">
+            <div class="sc2">
+                <div class="inner">
+                    <div class="title_wrap">
+                        <div class="water">
+                            <img src="images/Ellipse 33.png" alt="물방울">
+                        </div>
+                        <div class="title">
+                            <h3>버려진 순간, <span>자연</span>의 <span>변화</span>가 시작됩니다</h3>
+                        </div>
+                    </div>
+                    <div class="swiper swiper_wrap">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/sc2_turtle.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/sc2_2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/sc2_3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/sc2_4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/sc2_5.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/soil.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/river.png" alt=""></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper_wrap', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <div class="sc3">
+            <div class="inner">
+                <div class="title_wrap">
+                    <div class="title">
+                        <h3 class="nhard">어렵지 않아요</h3>
+                        <br style="display: none;">
+                        <span class="doit">이렇게 해주세요</span>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1142" height="1432" viewBox="0 0 1142 1432" fill="none">
+                    <path class="p_n"
+                        d="M802.69 43.3244C654.977 0.581621 316.643 -45.3327 145.012 112.953C-69.5266 310.809 277.616 569.835 670.624 488.157C1063.63 406.479 1186.82 596.64 1124.01 750.648C1061.19 904.657 876.723 1014.61 536.508 979.032C196.293 943.453 88.9081 1009.14 15.41 1124.08C-46.2963 1220.57 104.483 1446.5 651.943 1428.06"
+                        stroke="#0F4C2D" stroke-width="4.96967" stroke-dasharray="24.85 24.85" />
+                </svg>
+                <div class="container">
+                    <div class="trash">
+                        <div class="title_wrap">
+                            <div class="title">
+                                <p>분리배출</p>
+                            </div>
+                            <div class="s_txt">
+                                <p>
+                                    사용한 PET를 깨끗하게 비우고
+                                    분리수거함에 넣으세요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tra_img">
+                            <img src="images/sc3_1.png" alt="분리배출, 쓰레기통">
+                        </div>
+                    </div>
+                    <div class="peple">
+                        <div class="title_wrap">
+                            <div class="title">
+                                <p>수거 및 운반</p>
+                            </div>
+                            <div class="s_txt">
+                                <p>
+                                    수거 업체가 수거하여
+                                    재활용 시설로 운반합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tcar_img">
+                            <img src="images/sc3_2.png" alt="환경미화원, 쓰레기차">
+                        </div>
+                    </div>
+                    <div class="re">
+                        <div class="title_wrap">
+                            <div class="title">
+                                <p>재처리 공정</p>
+                            </div>
+                            <div class="s_txt">
+                                <p>
+                                    깨끗하게 세척하고 분해하여
+                                    새로운 원료로 탄생시킵니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="re_img">
+                            <img src="images/sc3_3.png" alt="재처리, 재처리과정">
+                        </div>
+                    </div>
+                    <div class="objc">
+                        <div class="title_wrap">
+                            <div class="title">
+                                <p>새로운 제품으로 탄생</p>
+                            </div>
+                            <div class="s_txt">
+                                <p>
+                                    의류, 가방, 생활용품 등
+                                    다양한 제품으로 다시 탄생합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="objc_img">
+                            <img src="images/sc3_4.png" alt="분리배출, 쓰레기통">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc4">
+            <div class="inner">
+                <div class="container">
+                    <div class="title_wrap">
+                        <div class="title">
+                            <span class="black">
+                                <p class="t1">우</p>
+                                <p class="t1">리</p>
+                                <p class="t1">의</p>
+                                <p class="t1">작</p>
+                                <p class="t1">은</p>
+                                <p class="t1">선</p>
+                                <p class="t1">택</p>
+                                <p class="t1">이</p>
+                            </span>
+                            <br>
+                            <span class="blue">
+                                <p class="t1">더</p>
+                                <p class="t1">깨</p>
+                                <p class="t1">끗</p>
+                                <p class="t1">한</p>
+                                <br>
+                                <p class="t1">내</p>
+                                <p class="t1">일</p>
+                                <p class="t1">을</p>
+                                <p class="t1">만</p>
+                                <p class="t1">듭</p>
+                                <p class="t1">니</p>
+                                <p class="t1">다</p>
+                                <p class="t1">.</p>
+                            </span>
+                        </div>
+                        <div class="btn_wrap">
+                            <div class="btn">
+                                <a href="#">
+                                    <p class="txt">
+                                        참여하기
+                                    </p>
+                                    <div class="arrow">
+                                        <img src="images/arrow.png" alt="화살표">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottle">
+                        <div class="bimg">
+                            <img src="images/pet.png" alt="페트병, 물병">
+                        </div>
+                        <div class="b0img">
+                            <img src="images/pet_de.png" alt="페트병, 그림자 느낌">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc5">
+            <div class="inner">
+                <div class="container">
+                    <div class="title_wrap">
+                        <div class="reap_img">
+                            <img src="images/sc5_leaf.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h1>
+                                올바른 분리배출,<span>어렵지 않아요</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="flex_box_wrap">
+                        <div class="flex_box">
+                            <div class="f_img">
+                                <img src="images/sc5_Empty.png" alt="비우기">
+                            </div>
+                            <div class="tit_wrap">
+                                <div class="m_txt">
+                                    <p><span>01</span> 비우기</p>
+                                </div>
+                                <div class="s_txt">
+                                    <p>내용물을 깨끗이 비워요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_box">
+                            <div class="f_img">
+                                <img src="images/sc5_preace.png" alt="압축하기">
+                            </div>
+                            <div class="tit_wrap">
+                                <div class="m_txt">
+                                    <p><span>02</span> 압축하기</p>
+                                </div>
+                                <div class="s_txt">
+                                    <p>부피를 줄여 보관과
+                                        재활용을 쉽게 해요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_box">
+                            <div class="f_img">
+                                <img src="images/sc5_remove.png" alt="라벨, 제거하기">
+                            </div>
+                            <div class="tit_wrap">
+                                <div class="m_txt">
+                                    <p><span>03</span> 제거하기</p>
+                                </div>
+                                <div class="s_txt">
+                                    <p>라벨과 스티커를 제거해요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_box">
+                            <div class="f_img">
+                                <img src="images/sc5_getout.png" alt="비우기">
+                            </div>
+                            <div class="tit_wrap">
+                                <div class="m_txt">
+                                    <p><span>04</span> 배출하기</p>
+                                </div>
+                                <div class="s_txt">
+                                    <p>분리배출함에 버려요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn">
+                            <a href="#">
+                                <p class="txt">
+                                    참여하기
+                                </p>
+                                <div class="arrow">
+                                    <img src="images/arrow.png" alt="화살표">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
