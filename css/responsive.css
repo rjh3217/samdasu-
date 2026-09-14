@@ -8,6 +8,21 @@
 
 @media screen and (max-width: 768px) {
 
+    /* ==================================================
+       MOBILE FONT VARIABLES
+       root.css의 폰트 체계를 기준으로 모바일 크기 설정
+    ================================================== */
+
+    :root {
+        --intro_title: 25px;
+        --intro_sub_txt: 18px;
+        --section_title: 27px;
+        --section_sub: 18px;
+        --btn_txt: 11px;
+        --foot_mtxt: 16px;
+        --foot_stxt: 10px;
+    }
+
 
     /* ==================================================
        HEADER
@@ -19,10 +34,6 @@
 
     .mobile_header {
         display: block !important;
-    }
-
-    .inner {
-        padding: 0 120px;
     }
 
 
@@ -65,7 +76,7 @@
     }
 
     .sc1 .title .t1 {
-        font-size: 25px;
+        font-size: var(--intro_title);
     }
 
     .sc1 .sub_t {
@@ -123,7 +134,7 @@
 
     /* SC2 제목 */
 
-    .sc2>.inner>.title_wrap {
+    .sc2 > .inner > .title_wrap {
         width: 100%;
 
         display: flex;
@@ -135,14 +146,14 @@
         text-align: center;
     }
 
-    .sc2>.inner>.title_wrap .water img {
+    .sc2 > .inner > .title_wrap .water img {
         width: 16px;
 
         margin-bottom: 45px;
     }
 
-    .sc2>.inner>.title_wrap .title h3 {
-        font-size: 27px;
+    .sc2 > .inner > .title_wrap .title h3 {
+        font-size: var(--section_title);
         line-height: 1.25;
     }
 
@@ -195,10 +206,6 @@
     }
 
 
-    /* ==================================================
-       SC3
-       모바일에서는 SC3 콘텐츠를 표시하지 않음
-    ================================================== */
 
     .sc3 {
         display: none;
@@ -249,7 +256,7 @@
 
     /* SC4 제목 */
 
-    .sc4>.inner>.container>.title_wrap {
+    .sc4 > .inner > .container > .title_wrap {
         width: 100%;
 
         display: flex;
@@ -262,7 +269,7 @@
     }
 
 
-    .sc4>.inner>.container>.title_wrap .title {
+    .sc4 > .inner > .container > .title_wrap .title {
         width: 100%;
 
         margin-bottom: 25px;
@@ -271,12 +278,12 @@
     }
 
 
-    .sc4>.inner>.container>.title_wrap .title .black {
+    .sc4 > .inner > .container > .title_wrap .title .black {
         font-size: 28px;
     }
 
 
-    .sc4>.inner>.container>.title_wrap .title .blue {
+    .sc4 > .inner > .container > .title_wrap .title .blue {
         font-size: 30px;
     }
 
@@ -317,11 +324,12 @@
     }
 
 
-    .sc4>.inner>.container .b0img {
+    .sc4 .b0img {
+        position: absolute;
 
         left: 0;
         right: auto;
-        bottom: -35px;
+        bottom: 0;
 
         width: 100%;
     }
@@ -403,7 +411,7 @@
 
 
     .sc5 .inner .container .flex_box_wrap .flex_box {
-        width: 240px;
+        width: 210px;
 
         text-align: center;
     }
@@ -421,7 +429,7 @@
 
 
     .sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .m_txt {
-        font-size: 16px;
+        font-size: var(--foot_mtxt);
         line-height: 1.3;
     }
 
@@ -429,7 +437,7 @@
     .sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .s_txt {
         padding-top: 5px;
 
-        font-size: 10px;
+        font-size: var(--foot_stxt);
         line-height: 1.4;
     }
 
@@ -438,6 +446,10 @@
 
     .sc5 .btn_wrap {
         margin-top: 35px;
+    }
+
+    .sc5 .respon {
+        display: block !important;
     }
 
 
