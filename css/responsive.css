@@ -380,7 +380,7 @@
     }
 
     .sc5 .inner .container .title_wrap .title {
-        font-size: var(--intro_title);
+        font-size: var(--intro_sub_txt);
         line-height: 1.3;
     }
 
