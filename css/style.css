@@ -1290,3 +1290,17 @@ header.on {
 .sc5 .flex_box_wrap .flex_box:nth-child(4) {
     animation-delay: 1.5s;
 }
+
+/* 스크롤바 설정 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--main_color);
+}
+
+::-webkit-scrollbar-track {
+   background-color: rgba(0, 0, 0, 0.2);
+}
