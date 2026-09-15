@@ -1304,3 +1304,73 @@ header.on {
 ::-webkit-scrollbar-track {
    background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* footer 설정 */
+
+footer {
+
+    width: 100%;
+    height: 280px;
+    background-color: var(--main_color);
+    padding: 75px 200px;
+
+}
+
+.footer_inner {
+    max-width: 1400px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    column-gap: 80px;
+    row-gap: 25px;
+
+}
+
+.footer_inner .up_txtbox {
+    display: flex;
+    gap: 70px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer_inner .logo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.footer_inner .logo a {
+    width: 37px;
+    height: auto;
+}
+
+.footer_inner .logo img {
+    width: 100%;
+}
+
+.footer_inner .down_txtbox {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer_inner .down_txtbox p {
+    margin-top: 5px;
+}
+
+.footer_inner .samdasu_logo {
+    width: 143px;
+    height: auto;
+    /* grid-column: 2;
+    grid-row: 2; */
+    justify-self: end;
+    align-self: end;
+}
+
+.footer_inner .samdasu_logo img {
+    width: 100%
+}
