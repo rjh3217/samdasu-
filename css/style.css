@@ -87,7 +87,7 @@ header .hd_menu li {
 
 
 header.on .hd_logo .logo_white {
-    display: none;
+    display: none;  
 }
 
 header.on .hd_logo .logo_blue,
