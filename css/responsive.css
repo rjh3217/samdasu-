@@ -13,7 +13,7 @@
     :root {
         --intro_title: 25px;
         --intro_sub_txt: 18px;
-        --section_title: 27px;
+        --section_title: 22px;
         --section_sub: 18px;
         --btn_txt: 11px;
         --foot_mtxt: 16px;
@@ -47,7 +47,7 @@
 
     .sc1 {
         width: 100%;
-        height: 700px;
+        height: 500px;
 
         /* max-height: 100vh; */
         min-height: 0;
@@ -56,9 +56,6 @@
         background-size: cover;
     }
 
-    .sc1 .cont_wrap {
-        margin-top: 100px;
-    }
 
     .sc1 .inner {
         width: 100%;
