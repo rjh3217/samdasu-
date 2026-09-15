@@ -272,11 +272,4 @@ $(function () {
 
     });
 
-    console.log('화면 높이:', window.innerHeight);
-    console.log('화면 너비:', $(window).width());
-    console.log('스크롤 위치:', window.scrollY);
-    console.log('SC4 문서 위치:', sc4.getBoundingClientRect().top + window.scrollY);
-    console.log('SC4 화면 위치:', sc4.getBoundingClientRect().top);
-
-
 });

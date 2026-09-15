@@ -318,10 +318,6 @@ header.on {
 }
 
 
-
-/* 모바일 헤더 */
-
-
 /* sc1 */
 .sc1 {
     width: 100%;
@@ -496,6 +492,10 @@ header.on {
 }
 
 /* 버튼 주변 원 */
+
+.sc1 .btn>a::before {
+    background-color: var(--sub4_color);
+}
 
 .btn>a::before {
     content: '';
