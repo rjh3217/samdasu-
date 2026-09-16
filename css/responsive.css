@@ -80,7 +80,7 @@
         /* font-size: var(--intro_sub_txt); */
         margin-bottom: 3px;
     }
-    
+
 
     .sc1 .title .t1 {
         font-size: var(--intro_title);
@@ -472,7 +472,6 @@
         width: 30px;
     }
 
-    /* 푸터 반응형 */
     /* footer */
 
 
@@ -495,7 +494,7 @@
         }
 
         .footer_inner .up_txtbox {
-            font-size: 13px;
+            font-size: 14px;
             line-height: 1.6;
         }
 
@@ -509,11 +508,11 @@
         }
 
         .footer_inner .logo a {
-            width: 28px;
+            width: 30px;
         }
 
         .footer_inner .samdasu_logo {
-            width: 105px;
+            width: 120px;
         }
 
         .footer_inner .samdasu_logo img {
@@ -524,37 +523,46 @@
 
     @media screen and (max-width: 768px) {
         footer {
-            padding: 40px 45px;
+            padding: 28px 45px;
         }
 
-        .footer_inner .up_txtbox {
+        .footer_inner {
             display: flex;
-            gap: 20px;
-        }
-    }
-
-    @media screen and (max-width: 490px) {
-        .footer_inner .up_txtbox {
-            font-size: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 16px;
         }
 
         .footer_inner .up_txtbox {
-            gap: 8px;
+            gap: 50px;
+        }
+
+        .footer_inner .samdasu_logo {
+            justify-self: center;
+            align-self: flex-start;
+        }
+
+        .footer_inner .logo {
+            gap: 35px;
         }
 
         .footer_inner .down_txtbox {
-            font-size: 8px;
+            font-size: 13px;
+            line-height: 1.6;
         }
+
     }
+
+
 
     @media screen and (max-width: 425px) {
         footer {
             padding: 30px 36px;
-            height: 180px;
         }
 
         .footer_inner .up_txtbox {
-            font-size: 9px;
+            font-size: 13px;
         }
 
         .footer_inner .up_txtbox {
@@ -562,12 +570,16 @@
             gap: 27px;
         }
 
+        .footer_inner .logo {
+            gap: 30px;
+        }
+
         .footer_inner .logo a {
             width: 20px;
         }
 
         .footer_inner .down_txtbox {
-            font-size: 7px;
+            font-size: 12px;
         }
 
         .footer_inner .samdasu_logo {
@@ -575,10 +587,11 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
-        .footer_inner .up_txtbox {
-            gap: 16px;
+    @media screen and (max-width: 320px) {
+        footer {
+            padding: 17px 36px;
         }
     }
+
 
 }
