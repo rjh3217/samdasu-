@@ -314,7 +314,25 @@ header.hide {
     gap: 10px;
     align-items: center;
     z-index: 99999;
+}
 
+.gotop_wrap .gtxt {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    white-space: nowrap;
+}
+.gotop_wrap.on .gtxt p {
+    color: #fff;
+}
+
+.gotop_wrap .gtxt p {
+    color: var(--font_color);
+    /* 평소 → 파란색 */
+    transition: color 0.3s ease;
+    font-size: 16px;
 }
 
 .gotop_wrap .ellips_w,

@@ -444,6 +444,10 @@
        GOTOP
     ================================================== */
 
+    .gotop_wrap .gtxt p {
+        font-size: 12px;
+    }
+
     .gotop_wrap {
         right: 10px;
         bottom: 15px;
