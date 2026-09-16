@@ -1097,7 +1097,7 @@ header.on {
 }
 
 .sc4 .black .t1:nth-child(4),
-.sc4 .black .t1:nth-child(6),
+/* .sc4 .black .t1:nth-child(6), */
 .sc4 .blue .t1:nth-child(2),
 .sc4 .blue .t1:nth-child(9) {
     padding-left: 2%;
