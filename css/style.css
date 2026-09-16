@@ -112,9 +112,7 @@ header .hd_menu li {
 }
 
 
-/* ========================
-   HEADER HOVER
-======================== */
+
 
 header:hover {
     background-color: #fff;
@@ -151,10 +149,10 @@ header.hide {
 
 .mobile_menu_btn {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 
-    width: 42px;
+    width: 35px;
     height: 35px;
 
     padding: 5px;
