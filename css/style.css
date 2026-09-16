@@ -318,7 +318,7 @@ header.hide {
 
 .gotop_wrap .gtxt {
     position: absolute;
-    top: 20px;
+    top: 28px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
