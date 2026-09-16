@@ -32,7 +32,7 @@ img {
 
 
 .inner {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -54,10 +54,17 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
+
+    background: transparent;
+
+    transition:
+        background-color 0.4s ease,
+        transform 0.4s ease;
 }
 
 
 /* header 설정 시작~ */
+
 header nav {
     width: 100%;
 }
@@ -74,30 +81,61 @@ header .hd_menu li {
     font-size: var(--section_sub);
     color: var(--sub4_color);
     font-weight: 700;
+
+    /* 글씨 색상 부드럽게 */
+    transition: color 0.4s ease;
 }
 
-.hd_logo .logo_white {
-    display: block;
+
+/* 로고 영역 */
+.hd_logo {
+    position: relative;
 }
 
+/* 두 로고 공통 */
+.hd_logo .logo_white,
 .hd_logo .logo_blue {
-    display: none;
+    transition: opacity 0.4s ease;
+}
 
+/* 흰색 로고 */
+.hd_logo .logo_white {
+    opacity: 1;
+}
+
+/* 파란색 로고 */
+.hd_logo .logo_blue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 
-header.on .hd_logo .logo_white {
-    display: none;  
+/* ========================
+   HEADER HOVER
+======================== */
+
+header:hover {
+    background-color: #fff;
 }
 
-header.on .hd_logo .logo_blue,
-header.on .hd_menu li {
-    color: var(--main_color);
-    display: block;
+header:hover .hd_logo .logo_white {
+    opacity: 0;
 }
 
-header.on {
-    background-color: var(--sub4_color);
+header:hover .hd_logo .logo_blue {
+    opacity: 1;
+}
+
+header:hover .hd_menu li {
+    color: var(--font_color);
+}
+
+
+
+header.hide {
+    transform: translateY(-100%);
 }
 
 /* =========================
@@ -1302,7 +1340,7 @@ header.on {
 }
 
 ::-webkit-scrollbar-track {
-   background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* footer 설정 */

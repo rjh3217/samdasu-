@@ -1,47 +1,85 @@
 $(function () {
 
-
     // ================================
     // HEADER
     // ================================
 
     const $header = $('header');
     const $mobileHeader = $('.mobile_header');
-    const sc3 = $('.sc3')[0];
-    const sc4 = $('.sc4')[0];
+
+    const $sc3 = $('.sc3');
+    const $sc4 = $('.sc4');
+
+    let lastScrollTop = 0;
+
 
     $(window).on('scroll', function () {
 
         const scrollTop = $(window).scrollTop();
 
-        let changePoint;
+
+        // --------------------------------
+        // 1. 아래로 스크롤 → 헤더 숨김
+        // 2. 위로 스크롤 → 헤더 등장
+        // --------------------------------
+
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+
+            $header.addClass('hide');
+            $mobileHeader.addClass('hide');
+
+        } else {
+
+            $header.removeClass('hide');
+            $mobileHeader.removeClass('hide');
+
+        }
+
+
+        // --------------------------------
+        // 3. PC → SC3 진입 시 헤더 변경
+        // --------------------------------
+
+        if ($(window).width() > 968) {
+
+            const sc3Top = $sc3[0].offsetTop;
+
+            if (scrollTop >= sc3Top) {
+
+                $header.addClass('on');
+
+            } else {
+
+                $header.removeClass('on');
+
+            }
+
+        }
+
+
+        // --------------------------------
+        // 4. 모바일 → SC4 진입 시 헤더 변경
+        // --------------------------------
 
         if ($(window).width() <= 968) {
 
-            // 모바일 → SC4 진입하면 헤더 변경
-            const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
-            changePoint = sc4Top;
+            const sc4Top =
+                $sc4[0].getBoundingClientRect().top + scrollTop;
 
-        } else {
+            if (scrollTop >= sc4Top) {
 
-            // PC → SC3 진입하면 헤더 변경
-            changePoint = sc3.offsetTop;
+                $mobileHeader.addClass('on');
 
-        }
+            } else {
 
-        if (scrollTop >= changePoint) {
+                $mobileHeader.removeClass('on');
 
-            $header.addClass('on');
-            $mobileHeader.addClass('on');
-
-        } else {
-
-            $header.removeClass('on');
-            $mobileHeader.removeClass('on');
+            }
 
         }
 
-        console.log('HEADER', scrollTop, changePoint, scrollTop >= changePoint);
+
+        lastScrollTop = scrollTop;
 
     });
 
@@ -51,7 +89,8 @@ $(function () {
     // ================================
 
     const $goTop = $('.gotop_wrap');
-    const $sc3 = $('.sc3');
+    const $footer = $('footer');
+
 
     $(window).on('scroll', function () {
 
@@ -59,19 +98,29 @@ $(function () {
 
         let changePoint;
 
+
         if ($(window).width() <= 968) {
 
             // 모바일 → SC4보다 550px 먼저 파란색
-            const sc4Top = sc4.getBoundingClientRect().top + scrollTop;
+            const sc4Top =
+                $sc4[0].getBoundingClientRect().top + scrollTop;
+
             changePoint = sc4Top - 550;
+
 
         } else {
 
-            // PC → 기존 그대로
+            // PC → SC3보다 800px 먼저 파란색
             const sc3Top = $sc3[0].offsetTop;
+
             changePoint = sc3Top - 800;
 
         }
+
+
+        // --------------------------------
+        // SC3 / SC4 진입 → 파란색
+        // --------------------------------
 
         if (scrollTop >= changePoint) {
 
@@ -83,7 +132,19 @@ $(function () {
 
         }
 
-        console.log('GOTOP', scrollTop, changePoint, scrollTop >= changePoint);
+
+        // --------------------------------
+        // FOOTER 진입 → 다시 흰색
+        // --------------------------------
+
+        const footerTop =
+            $footer[0].getBoundingClientRect().top;
+
+        if (footerTop <= $(window).height() - 150) {
+
+            $goTop.removeClass('on');
+
+        }
 
     });
 
@@ -109,10 +170,17 @@ $(function () {
         const $objc = $('.sc3 .objc');
 
 
-        const trashTop = $trash[0].getBoundingClientRect().top;
-        const pepleTop = $peple[0].getBoundingClientRect().top;
-        const reTop = $re[0].getBoundingClientRect().top;
-        const objcTop = $objc[0].getBoundingClientRect().top;
+        const trashTop =
+            $trash[0].getBoundingClientRect().top;
+
+        const pepleTop =
+            $peple[0].getBoundingClientRect().top;
+
+        const reTop =
+            $re[0].getBoundingClientRect().top;
+
+        const objcTop =
+            $objc[0].getBoundingClientRect().top;
 
 
         const triggerPoint = windowHeight * 0.8;
@@ -166,7 +234,6 @@ $(function () {
     // SC4 스크롤
     // ================================
 
-    const $sc4 = $('.sc4');
     let sc4Played = false;
 
 
@@ -181,8 +248,11 @@ $(function () {
         if (sc4Played) return;
 
 
-        const sc4Top = $sc4[0].getBoundingClientRect().top;
-        const triggerPoint = $(window).height() * 0.8;
+        const sc4Top =
+            $sc4[0].getBoundingClientRect().top;
+
+        const triggerPoint =
+            $(window).height() * 0.8;
 
 
         if (sc4Top <= triggerPoint) {
@@ -204,6 +274,7 @@ $(function () {
     // ================================
 
     const $sc5 = $('.sc5');
+
     let sc5Played = false;
 
 
@@ -218,8 +289,11 @@ $(function () {
         if (sc5Played) return;
 
 
-        const sc5Top = $sc5[0].getBoundingClientRect().top;
-        const triggerPoint = $(window).height() * 0.8;
+        const sc5Top =
+            $sc5[0].getBoundingClientRect().top;
+
+        const triggerPoint =
+            $(window).height() * 0.8;
 
 
         if (sc5Top <= triggerPoint) {
@@ -246,6 +320,7 @@ $(function () {
 
         $('.mobile_menu').addClass('active');
         $(this).addClass('active');
+
         $('.gotop_wrap').hide();
 
     });
@@ -257,6 +332,7 @@ $(function () {
 
         $('.mobile_menu').removeClass('active');
         $('.mobile_menu_btn').removeClass('active');
+
         $('.gotop_wrap').show();
 
     });
@@ -268,6 +344,7 @@ $(function () {
 
         $('.mobile_menu').removeClass('active');
         $('.mobile_menu_btn').removeClass('active');
+
         $('.gotop_wrap').show();
 
     });
