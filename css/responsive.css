@@ -534,8 +534,12 @@
             gap: 16px;
         }
 
+        .footer_inner .up {
+            display: flex;
+        }
+
         .footer_inner .up_txtbox {
-            gap: 50px;
+            gap: 30px;
         }
 
         .footer_inner .samdasu_logo {
@@ -544,7 +548,7 @@
         }
 
         .footer_inner .logo {
-            gap: 35px;
+            gap: 10px;
         }
 
         .footer_inner .down_txtbox {
@@ -554,7 +558,20 @@
 
     }
 
+    @media screen and (max-width: 520px) {
+        .footer_inner .up_txtbox {
+            gap: 14px;
+            font-size: 12px;
+        }
 
+        .footer_inner .logo {
+            gap: 6px;
+        }
+
+        .footer_inner .logo a {
+            width: 25px;
+        }
+    }
 
     @media screen and (max-width: 425px) {
         footer {
@@ -562,16 +579,16 @@
         }
 
         .footer_inner .up_txtbox {
-            font-size: 13px;
+            font-size: 11px;
         }
 
         .footer_inner .up_txtbox {
             display: flex;
-            gap: 27px;
+            gap: 9px;
         }
 
         .footer_inner .logo {
-            gap: 30px;
+            gap: 9px;
         }
 
         .footer_inner .logo a {
@@ -579,11 +596,29 @@
         }
 
         .footer_inner .down_txtbox {
-            font-size: 12px;
+            font-size: 11px;
         }
 
         .footer_inner .samdasu_logo {
             width: 90px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        footer {
+            padding: 17px 36px;
+        }
+
+        .footer_inner .up {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .footer_inner {
+            gap: 9px;
         }
     }
 
@@ -592,6 +627,13 @@
             padding: 17px 36px;
         }
     }
+
+    @media screen and (max-width: 250px) {
+        footer {
+            padding: 0px 24px;
+        }
+    }
+
 
 
 }
