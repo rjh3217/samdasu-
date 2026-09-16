@@ -96,6 +96,11 @@
         line-height: 1.5;
     }
 
+    .btn_wrap {
+        transform: scale(0.75) !important;
+        margin-top: 10%;
+    }
+
 
     .btn .txt {
         font-size: var(--mbtn_txt);
