@@ -1120,20 +1120,19 @@ header.hide {
 }
 
 .sc3_sub>.inner>.title_wrap .title {
-    font-size: 25px;
     line-height: 1.2;
 }
 
 .sc3_sub>.inner>.title_wrap .nhard {
     margin: 0;
     font-weight: bold;
-    font-size: var(--intro_title);
+    font-size:30px;
 }
 
 .sc3_sub>.inner>.title_wrap .doit {
     color: #149B50;
     font-weight: bold;
-    font-size: var(--intro_title);
+    font-size: 30px;
 }
 
 
@@ -1210,7 +1209,7 @@ header.hide {
 .sc3_sub .container .title p {
     color: #149B50;
 
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
 
     line-height: 1.3;
