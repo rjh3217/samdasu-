@@ -278,7 +278,7 @@ $(function () {
     let sc5Played = false;
 
 
-    $('.sc5 .flex_box').css(
+    $('.sc5 .grid_box').css(
         'animation-play-state',
         'paused'
     );
@@ -298,7 +298,7 @@ $(function () {
 
         if (sc5Top <= triggerPoint) {
 
-            $('.sc5 .flex_box').css(
+            $('.sc5 .grid_box').css(
                 'animation-play-state',
                 'running'
             );

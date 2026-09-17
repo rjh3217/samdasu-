@@ -3,7 +3,7 @@
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 765px) {
 
     /* ==================================================
        MOBILE FONT VARIABLES
@@ -216,147 +216,147 @@
    SC3_SUB
 ================================================== */
 
-.sc3_sub {
-    display: block;
+    .sc3_sub {
+        display: block;
 
-    width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
 
-    background: url('../images/sc3_bg.png') center / cover no-repeat;
-}
+        background: url('../images/sc3_bg.png') center / cover no-repeat;
+    }
 
-.sc3_sub > .inner {
-    width: 100%;
-    max-width: none;
-    height: auto;
+    .sc3_sub>.inner {
+        width: 100%;
+        max-width: none;
+        height: auto;
 
-    padding: 55px 20px 70px;
+        padding: 55px 20px 70px;
 
-    box-sizing: border-box;
-}
-
-
-/* 제목 */
-
-.sc3_sub > .inner > .title_wrap {
-    width: 100%;
-    margin-bottom: 50px;
-
-    text-align: center;
-}
-
-.sc3_sub > .inner > .title_wrap .title {
-    font-size: 25px;
-    line-height: 1.2;
-}
-
-.sc3_sub > .inner > .title_wrap .nhard {
-    margin: 0;
-    font-weight: 400;
-    font-size: var(--intro_title);
-}
-
-.sc3_sub > .inner > .title_wrap .doit {
-    color: #149B50;
-    font-weight: 700;
-}
+        box-sizing: border-box;
+    }
 
 
-/* ================================
+    /* 제목 */
+
+    .sc3_sub>.inner>.title_wrap {
+        width: 100%;
+        margin-bottom: 50px;
+
+        text-align: center;
+    }
+
+    .sc3_sub>.inner>.title_wrap .title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .sc3_sub>.inner>.title_wrap .nhard {
+        margin: 0;
+        font-weight: bold;
+        font-size: var(--intro_title);
+    }
+
+    .sc3_sub>.inner>.title_wrap .doit {
+        color: #149B50;
+        font-weight: bol;
+    }
+
+
+    /* ================================
    2 × 2 GRID
 ================================ */
 
-.sc3_sub > .inner > .container {
-    width: 100%;
-    max-width: none;
+    .sc3_sub>.inner>.container {
+        width: 100%;
+        max-width: none;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
-    column-gap: 25px;
-    row-gap: 50px;
-}
-
-
-/* 카드 */
-
-.sc3_sub > .inner > .container > div {
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
+        column-gap: 25px;
+        row-gap: 50px;
+    }
 
 
-/* ================================
+    /* 카드 */
+
+    .sc3_sub>.inner>.container>div {
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* ================================
    이미지
 ================================ */
 
-.sc3_sub .tra_img,
-.sc3_sub .tcar_img,
-.sc3_sub .re_img,
-.sc3_sub .objc_img {
-    width: 100%;
-    max-width: 150px;
+    .sc3_sub .tra_img,
+    .sc3_sub .tcar_img,
+    .sc3_sub .re_img,
+    .sc3_sub .objc_img {
+        width: 100%;
+        max-width: 150px;
 
-    aspect-ratio: 1 / 1;
+        aspect-ratio: 1 / 1;
 
-    border-radius: 50%;
-    overflow: hidden;
-}
+        border-radius: 50%;
+        overflow: hidden;
+    }
 
-.sc3_sub .tra_img img,
-.sc3_sub .tcar_img img,
-.sc3_sub .re_img img,
-.sc3_sub .objc_img img {
-    width: 100%;
-    height: 100%;
+    .sc3_sub .tra_img img,
+    .sc3_sub .tcar_img img,
+    .sc3_sub .re_img img,
+    .sc3_sub .objc_img img {
+        width: 100%;
+        height: 100%;
 
-    object-fit: cover;
-}
+        object-fit: cover;
+    }
 
 
-/* ================================
+    /* ================================
    텍스트
 ================================ */
 
-.sc3_sub .container .title_wrap {
-    width: 100%;
+    .sc3_sub .container .title_wrap {
+        width: 100%;
 
-    margin: 12px 0 0;
+        margin: 12px 0 0;
 
-    text-align: center;
-}
+        text-align: center;
+    }
 
-.sc3_sub .container .title p {
-    color: #149B50;
+    .sc3_sub .container .title p {
+        color: #149B50;
 
-    font-size: var(--intro_sub_txt);
-    font-weight: 700;
+        font-size: var(--intro_sub_txt);
+        font-weight: 700;
 
-    line-height: 1.3;
+        line-height: 1.3;
 
-    word-break: keep-all;
-}
+        word-break: keep-all;
+    }
 
-.sc3_sub .container .s_txt {
-    width: 100%;
-    margin-top: 5px;
-}
+    .sc3_sub .container .s_txt {
+        width: 100%;
+        margin-top: 5px;
+    }
 
-.sc3_sub .container .s_txt p {
-    color: #333;
+    .sc3_sub .container .s_txt p {
+        color: #333;
 
-    font-size: var(--intro_sub_txt);
-    font-weight: 400;
+        font-size: var(--intro_sub_txt);
+        font-weight: 400;
 
-    line-height: 1.5;
+        line-height: 1.5;
 
-    word-break: keep-all;
-}
+        word-break: keep-all;
+    }
 
 
     /* ==================================================
@@ -542,12 +542,10 @@
 
     /* SC5 4개 카드 */
 
-    .sc5 .inner .container .flex_box_wrap {
+    .sc5 .inner .container .grid_box_wrap {
         width: 100%;
 
-        display: flex !important;
-        flex-direction: column;
-
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
 
         gap: 35px;
@@ -555,27 +553,27 @@
         transform: none;
     }
 
-    .sc5 .inner .container .flex_box_wrap .flex_box {
+    .sc5 .inner .container .grid_box_wrap .grid_box {
         width: 210px;
 
         text-align: center;
     }
 
-    .sc5 .inner .container .flex_box_wrap .flex_box img {
+    .sc5 .inner .container .grid_box_wrap .grid_box img {
         width: 100%;
         height: auto;
     }
 
-    .sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap {
+    .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap {
         padding-top: 10px;
     }
 
-    .sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .m_txt {
+    .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .m_txt {
         font-size: var(--intro_sub_txt);
         line-height: 1.3;
     }
 
-    .sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .s_txt {
+    .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .s_txt {
         padding-top: 5px;
 
         font-size: var(--section_sub);
@@ -600,7 +598,7 @@
 
     .gotop_wrap {
         right: 10px;
-        bottom: 15px;
+        bottom: 10px;
 
         gap: 5px;
     }
@@ -724,6 +722,10 @@
 
         .footer_inner .logo a {
             width: 25px;
+        }
+
+        .sc5 .inner .container .grid_box_wrap {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 

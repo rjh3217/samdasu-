@@ -307,8 +307,8 @@ header.hide {
 /* gotop button 설정 시작이용 */
 .gotop_wrap {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -912,7 +912,6 @@ header.hide {
 
     align-items: center;
 
-    gap: 20px;
 }
 
 
@@ -960,7 +959,6 @@ header.hide {
 
 .sc3 .container .title {
     padding-top: 18px;
-    margin-bottom: 8px;
 }
 
 
@@ -1094,6 +1092,7 @@ header.hide {
 .sc3_sub {
     display: none;
 }
+
 
 /* sc4 시작 */
 
@@ -1286,8 +1285,9 @@ header.hide {
 }
 
 
-.sc5 .inner .container .flex_box_wrap {
-    display: flex;
+.sc5 .inner .container .grid_box_wrap  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 3.3%;
     transform: translateY(80px);
     width: 100%;
@@ -1296,30 +1296,30 @@ header.hide {
     padding: 0 20px;
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box {
-    flex: 1 1 0;
+.sc5 .inner .container .grid_box_wrap  .grid_box {
+    /* flex: 1 1 0; */
     min-width: 0;
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box img {
+.sc5 .inner .container .grid_box_wrap  .grid_box img {
     width: 100%;
     height: auto;
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap {
+.sc5 .inner .container .grid_box_wrap  .grid_box .tit_wrap {
     padding-top: 20px;
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .m_txt {
+.sc5 .inner .container .grid_box_wrap  .grid_box .tit_wrap .m_txt {
     font-size: var(--intro_sub_txt);
     font-weight: 700;
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .m_txt span {
+.sc5 .inner .container .grid_box_wrap  .grid_box .tit_wrap .m_txt span {
     color: var(--main_color);
 }
 
-.sc5 .inner .container .flex_box_wrap .flex_box .tit_wrap .s_txt {
+.sc5 .inner .container .grid_box_wrap  .grid_box .tit_wrap .s_txt {
     padding-top: 8px;
     font-size: var(--foot_mtxt);
     font-weight: 500;
@@ -1335,20 +1335,20 @@ header.hide {
     border: 1.5px solid var(--sub3_color);
 }
 
-.sc5 .flex_box_wrap .flex_box {
+.sc5 .grid_box_wrap .grid_box {
     opacity: 0;
     animation: titleUp 0.8s ease 0.1s forwards;
 }
 
-.sc5 .flex_box_wrap .flex_box:nth-child(2) {
+.sc5 .grid_box_wrap .grid_box:nth-child(2) {
     animation-delay: 0.5s;
 }
 
-.sc5 .flex_box_wrap .flex_box:nth-child(3) {
+.sc5 .grid_box_wrap .grid_box:nth-child(3) {
     animation-delay: 1s;
 }
 
-.sc5 .flex_box_wrap .flex_box:nth-child(4) {
+.sc5 .grid_box_wrap .grid_box:nth-child(4) {
     animation-delay: 1.5s;
 }
 
