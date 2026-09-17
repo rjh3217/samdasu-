@@ -1093,8 +1093,6 @@ header.hide {
 }
 
 .sc3_sub {
-    display: block;
-
     width: 100%;
     height: auto;
 
@@ -1134,7 +1132,8 @@ header.hide {
 
 .sc3_sub>.inner>.title_wrap .doit {
     color: #149B50;
-    font-weight: bol;
+    font-weight: bold;
+    font-size: var(--intro_title);
 }
 
 
