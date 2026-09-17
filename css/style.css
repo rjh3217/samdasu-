@@ -1148,8 +1148,7 @@ header.hide {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    column-gap: 25px;
-    row-gap: 50px;
+    gap: 20px;
 
 
 }
@@ -1211,7 +1210,7 @@ header.hide {
 .sc3_sub .container .title p {
     color: #149B50;
 
-    font-size: var(--intro_sub_txt);
+    font-size: 28px;
     font-weight: 700;
 
     line-height: 1.3;
