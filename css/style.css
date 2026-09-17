@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 header {
@@ -324,6 +324,7 @@ header.hide {
     z-index: 2;
     white-space: nowrap;
 }
+
 .gotop_wrap.on .gtxt p {
     color: #fff;
 }
@@ -707,7 +708,7 @@ header.hide {
 }
 
 
-.sc2>.inner>.title_wrap .title h3 {
+.sc2>.inner>.title_wrap .title h2 {
     font-size: var(--section_title);
     font-weight: 700;
 }
@@ -1086,6 +1087,12 @@ header.hide {
 .sc3 .objc .objc_img.active {
     opacity: 1;
     top: 0;
+}
+
+/* sc3_sbu 시작! */
+
+.sc3_sub {
+    display: none;
 }
 
 /* sc4 시작 */
