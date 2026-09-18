@@ -82,6 +82,7 @@
 
     .sc1 .title .t1 {
         font-size: var(--section_Mtitle);
+        white-space: nowrap;
     }
 
     .sc1 .sub_t {
@@ -232,7 +233,7 @@
         max-width: none;
         height: auto;
 
-        padding: 50px 20px;
+        padding: 50px 40px;
 
         box-sizing: border-box;
         position: relative;
@@ -371,7 +372,7 @@
         max-width: none;
         height: auto;
 
-        padding: 50px 20px 80px;
+        padding: 50px 20px ;
 
         box-sizing: border-box;
     }
@@ -434,7 +435,7 @@
     }
 
     .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .m_txt {
-        font-size: var(--intro_sub_txt);
+        font-size: var(--section_Msub_sub);
         line-height: 1.3;
     }
 
