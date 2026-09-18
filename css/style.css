@@ -78,7 +78,7 @@ header .hd_menu {
 }
 
 header .hd_menu li {
-    font-size: var(--section_sub);
+    font-size: var(--intro_sub_txt);
     color: var(--sub4_color);
     font-weight: 700;
 
@@ -314,6 +314,8 @@ header.hide {
     gap: 10px;
     align-items: center;
     z-index: 99999;
+
+
 }
 
 .gotop_wrap .gtxt {
