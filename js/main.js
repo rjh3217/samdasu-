@@ -7,6 +7,7 @@ $(function () {
     const $header = $('header');
     const $mobileHeader = $('.mobile_header');
 
+    const $sc1 = $('.sc1');
     const $sc3 = $('.sc3');
     const $sc4 = $('.sc4');
 
@@ -17,19 +18,19 @@ $(function () {
 
         const scrollTop = $(window).scrollTop();
 
-
         // --------------------------------
-        // 1. 아래로 스크롤 → 헤더 숨김
-        // 2. 위로 스크롤 → 헤더 등장
+        // 스크롤 방향에 따른 헤더 표시
         // --------------------------------
 
         if (scrollTop > lastScrollTop && scrollTop > 100) {
 
+            // 아래로 스크롤 → 헤더 숨김
             $header.addClass('hide');
             $mobileHeader.addClass('hide');
 
         } else {
 
+            // 위로 스크롤 → 헤더 표시
             $header.removeClass('hide');
             $mobileHeader.removeClass('hide');
 
@@ -37,7 +38,22 @@ $(function () {
 
 
         // --------------------------------
-        // 3. PC → SC3 진입 시 헤더 변경
+        // SC1을 벗어나면 헤더 숨김 유지
+        // --------------------------------
+
+        const sc1Bottom =
+            $sc1.offset().top + $sc1.outerHeight();
+
+        if (scrollTop >= sc1Bottom) {
+
+            $header.addClass('hide');
+            $mobileHeader.addClass('hide');
+
+        }
+
+
+        // --------------------------------
+        // PC → SC3 진입 시 헤더 변경
         // --------------------------------
 
         if ($(window).width() > 968) {
@@ -58,7 +74,7 @@ $(function () {
 
 
         // --------------------------------
-        // 4. 모바일 → SC4 진입 시 헤더 변경
+        // 모바일 → SC4 진입 시 헤더 변경
         // --------------------------------
 
         if ($(window).width() <= 968) {
@@ -102,15 +118,16 @@ $(function () {
         if ($(window).width() <= 968) {
 
             // 모바일 → SC4보다 550px 먼저 파란색
+
             const sc4Top =
                 $sc4[0].getBoundingClientRect().top + scrollTop;
 
             changePoint = sc4Top - 550;
 
-
         } else {
 
             // PC → SC3보다 800px 먼저 파란색
+
             const sc3Top = $sc3[0].offsetTop;
 
             changePoint = sc3Top - 800;
@@ -162,7 +179,6 @@ $(function () {
 
 
         const windowHeight = $(window).height();
-
 
         const $trash = $('.sc3 .trash');
         const $peple = $('.sc3 .peple');

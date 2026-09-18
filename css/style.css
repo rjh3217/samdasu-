@@ -32,7 +32,7 @@ img {
 
 
 .inner {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 header {
@@ -407,11 +407,9 @@ header.hide {
 
 
 .sc1 .title .t_txt {
-    margin-bottom: 5px;
-
     font-size: var(--intro_title);
     font-weight: 400;
-    line-height: 1.2;
+
 
     opacity: 0;
     transform: translateY(60px);
@@ -439,7 +437,7 @@ header.hide {
 
 
 .sc1 .sub_t {
-    margin-top: 25px;
+    margin-top: 20px;
 
     opacity: 0;
     transform: translateY(40px);
@@ -795,7 +793,7 @@ header.hide {
 
 .sc3 .inner {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 1700px;
 
     margin: 0 auto;
@@ -830,7 +828,7 @@ header.hide {
 
     gap: 10px;
 
-    font-size: 48px;
+    font-size: var(--section_title);
     font-weight: 400;
 
     line-height: 1.2;
@@ -965,7 +963,7 @@ header.hide {
 .sc3 .container .title p {
     color: #149B50;
 
-    font-size: 37px;
+    font-size: var(--section_sub);
     font-weight: 700;
 
     line-height: 1.3;
@@ -979,10 +977,10 @@ header.hide {
 .sc3 .container .s_txt p {
     color: #333;
 
-    font-size: 17px;
+    font-size: var(--section_sub_sub);
     font-weight: 400;
 
-    line-height: 1.5;
+    line-height: 1.3;
 
     word-break: keep-all;
 }
@@ -1125,14 +1123,14 @@ header.hide {
 
 .sc3_sub>.inner>.title_wrap .nhard {
     margin: 0;
-    font-weight: bold;
-    font-size:30px;
+    font-weight: 400;
+    font-size:48px;
 }
 
 .sc3_sub>.inner>.title_wrap .doit {
     color: #149B50;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 48px;
 }
 
 
@@ -1146,8 +1144,8 @@ header.hide {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
+    
+    gap: 60px 0;
 
 
 }
@@ -1209,10 +1207,8 @@ header.hide {
 .sc3_sub .container .title p {
     color: #149B50;
 
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
-
-    line-height: 1.3;
 
     word-break: keep-all;
 }
@@ -1225,10 +1221,9 @@ header.hide {
 .sc3_sub .container .s_txt p {
     color: #333;
 
-    font-size: var(--intro_sub_txt);
+    font-size: 16px;
     font-weight: 400;
 
-    line-height: 1.5;
 
     word-break: keep-all;
 }
@@ -1275,7 +1270,6 @@ header.hide {
 
 .sc4>.inner>.container>.title_wrap .title {
     margin-bottom: 50px;
-    text-decoration: nowrap;
     width: 550px;
 }
 
@@ -1300,7 +1294,7 @@ header.hide {
 .sc4 .black .t1:nth-child(4),
 /* .sc4 .black .t1:nth-child(6), */
 .sc4 .blue .t1:nth-child(2),
-.sc4 .blue .t1:nth-child(9) {
+.sc4 .blue .t1:nth-child(5) {
     padding-left: 2%;
 }
 
@@ -1330,15 +1324,6 @@ header.hide {
     animation-delay: 0.7s;
 }
 
-.sc4 .black .t1:nth-child(7) {
-    animation-delay: 0.8s;
-}
-
-.sc4 .black .t1:nth-child(8) {
-    animation-delay: 0.9s;
-}
-
-
 .sc4 .blue .t1:nth-child(1) {
     animation-delay: 1s;
 }
@@ -1355,9 +1340,9 @@ header.hide {
     animation-delay: 1.3s;
 }
 
-/* .sc4 .blue .t1:nth-child(5) {
+.sc4 .blue .t1:nth-child(5) {
     animation-delay: 1.4s;
-} */
+}
 
 .sc4 .blue .t1:nth-child(6) {
     animation-delay: 1.5s;
@@ -1407,8 +1392,8 @@ header.hide {
     margin-bottom: 80px;
 }
 
-.sc5 .inner .container .title_wrap .title {
-    font-size: var(--intro_sub_txt);
+.sc5 .inner .container .title_wrap .title h1 {
+    font-size: var(--section_title);
     color: var(--font_color);
 }
 
@@ -1448,12 +1433,12 @@ header.hide {
 }
 
 .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap {
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .m_txt {
-    font-size: var(--intro_sub_txt);
-    font-weight: 700;
+    font-size: var(--section_sub);
+    font-weight: 600;
 }
 
 .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .m_txt span {
@@ -1461,9 +1446,8 @@ header.hide {
 }
 
 .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .s_txt {
-    padding-top: 8px;
-    font-size: var(--foot_mtxt);
-    font-weight: 500;
+    font-size: var(--section_sub_sub);
+    font-weight: 400;
 }
 
 .sc4 .btn>a,
@@ -1516,7 +1500,7 @@ footer {
 
 .footer_inner {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     display: grid;
