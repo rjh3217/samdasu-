@@ -372,7 +372,7 @@
         max-width: none;
         height: auto;
 
-        padding: 50px 20px ;
+        padding: 50px 20px;
 
         box-sizing: border-box;
     }
@@ -414,6 +414,9 @@
         gap: 35px;
 
         transform: none;
+    }
+    .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .s_txt {
+        display: none;
     }
 
     .sc5 .inner .container .grid_box_wrap .grid_box {
@@ -610,9 +613,7 @@
             max-width: 250px;
         }
 
-        .sc5 .inner .container .grid_box_wrap .grid_box .tit_wrap .s_txt {
-            display: none;
-        }
+      
     }
 
     @media screen and (max-width: 425px) {
