@@ -708,7 +708,7 @@ header.hide {
 
 .sc2>.inner>.title_wrap .title h2 {
     font-size: var(--section_title);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .sc2 .inner {
@@ -771,6 +771,7 @@ header.hide {
 
 .sc2 span {
     color: var(--sub3_color);
+    font-weight: 700;
 }
 
 
@@ -1129,7 +1130,7 @@ header.hide {
 
 .sc3_sub>.inner>.title_wrap .doit {
     color: #149B50;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 48px;
 }
 
@@ -1145,7 +1146,7 @@ header.hide {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
-    gap: 60px 0;
+    gap: 60px 5px;
 
 
 }
@@ -1292,7 +1293,6 @@ header.hide {
 }
 
 .sc4 .black .t1:nth-child(4),
-/* .sc4 .black .t1:nth-child(6), */
 .sc4 .blue .t1:nth-child(2),
 .sc4 .blue .t1:nth-child(5) {
     padding-left: 2%;
