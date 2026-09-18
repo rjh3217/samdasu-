@@ -1294,8 +1294,7 @@ header.hide {
 }
 
 .sc4 .black .t1:nth-child(4),
-.sc4 .blue .t1:nth-child(2),
-.sc4 .blue .t1:nth-child(5) {
+.sc4 .blue .t1:nth-child(4) {
     padding-left: 2%;
 }
 
